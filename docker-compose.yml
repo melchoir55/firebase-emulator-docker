@@ -1,0 +1,16 @@
+version: "3.0"
+services:
+  firebase:
+    build: .
+    image: firebase-emulator:firebase-emulator
+    volumes:
+      - .:/src
+    ports:
+      - 4400:4400
+      - 4500:4500
+      - 5000:5000
+      - 5001:5001
+      - 8001:8001
+      - 8080:8080
+      - 9000:9000
+    command: firebase emulators:start

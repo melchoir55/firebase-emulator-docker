@@ -30,6 +30,10 @@
     "rules": "storage.rules"
   },
   "emulators": {
+    "auth": {
+      "port": 9099,
+      "host": "0.0.0.0"
+    },
     "functions": {
       "host": "0.0.0.0",
       "port": 5001
